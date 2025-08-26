@@ -151,7 +151,7 @@ z-index:1000
     transform-origin: right center;
 }
 
-.opcoes-acessibilidade{
+.opcoes-acesibilidade{
     margin-top: 10px;
     display: flex;
     flex-direction: column;
