@@ -177,3 +177,16 @@ z-index:1000
     background-color: var(--alto-contraste-texto);
     coloe: var(--alto-contraste-texto)
 }
+
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link)
+}
+
+
+.alto-contraste #galeria{
+    background-color: var(--alto-contraste-alto);
+}
+
+.alto-contraste .fundo-galeria{
+    background: none;
+}
