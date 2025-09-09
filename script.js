@@ -2,35 +2,35 @@ document.addEventListener('DOMContentLoaded', function(){
     const aumentaFonteBotao = document.getElementById('aumentar-fonte');
     const diminuirFonteBotao = document.getElementById('diminuir-fonte');
 
-    let tamanhoAtualFonte= 1;
+    let tamanhoAtualFonte = 1;
 
     aumentaFonteBotao.addEventListener('click', function(){
         tamanhoAtualFonte += 0.1;
-        document.body.style.fontSize = '${tamanhoAtualFonte}rem'
-
+        document.body.style.fontSize = `${tamanhoAtualFonte}rem`
     })
+
      diminuirFonteBotao.addEventListener('click', function(){
         tamanhoAtualFonte -= 0.1;
-        document.body.style.fontSize = '${tamanhoAtualFonte}rem'
-
+        document.body.style.fontSize = `${tamanhoAtualFonte}rem`
     })
 
-const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade');
-const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade');
 
-botaoDeAcessibilidade.addEventListener('click', function(){
-    botaoDeAcessibilidade.classList.toggle('rotacao-botao');
-    opcoesDeAcessibilidade.classList.toggle('apresenta-lista');
-  })
+    const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade');
+    const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade');
 
-  const alternaContraste = document.getElementById('alterna-contrastre');
+    botaoDeAcessibilidade.addEventListener('click', function(){
+        botaoDeAcessibilidade.classList.toggle('rotacao-botao');
+        opcoesDeAcessibilidade.classList.toggle('apresenta-lista');
+    })
 
-  alternaContraste.addEventListener('click', function(){
-    document.body.classList.toggle('alto-contraste');
-  })
+    const alternaContraste = document.getElementById('alterna-contraste');
 
-  const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-expanded') === 'true';
-    botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado);
+    alternaContraste.addEventListener('click', function(){
+        document.body.classList.toggle('alto-contraste');
+    })
+
+    const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-expanded') === 'true';
+        botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado);
 
 })
 
