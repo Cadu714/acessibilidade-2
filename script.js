@@ -21,6 +21,10 @@ const botaoDeAcessibilidade = document.getElementById('opcoes-acessibilidade');
 botaoDeAcessibilidade.addEventListener('click', function(){
     botaoDeAcessibilidade.classList.toggle('rotacao-botao');
     botaoDeAcessibilidade.classList.toggle('apresenta-lista');
-})
+  })
+
+  const alternaContraste = document.getElementById('alterna-contrastre');
+
+  
 
 })
