@@ -26,7 +26,7 @@ botaoDeAcessibilidade.addEventListener('click', function(){
   const alternaContraste = document.getElementById('alterna-contrastre');
 
   alternaContraste.addEventListener('click', function(){
-    document.body.classList.toggle('alto-contraste')
+    document.body.classList.toggle('alto-contraste');
   })
 
 })
