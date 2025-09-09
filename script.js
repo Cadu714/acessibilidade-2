@@ -6,21 +6,21 @@ document.addEventListener('DOMContentLoaded', function(){
 
     aumentaFonteBotao.addEventListener('click', function(){
         tamanhoAtualFonte += 0.1;
-        document.body.style.fontSize = ${tamanhoAtualFonte}rem
+        document.body.style.fontSize = '${tamanhoAtualFonte}rem'
 
     })
      diminuirFonteBotao.addEventListener('click', function(){
         tamanhoAtualFonte -= 0.1;
-        document.body.style.fontSize = ${tamanhoAtualFonte}rem
+        document.body.style.fontSize = '${tamanhoAtualFonte}rem'
 
     })
 
 const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade');
-const botaoDeAcessibilidade = document.getElementById('opcoes-acessibilidade');
+const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade');
 
 botaoDeAcessibilidade.addEventListener('click', function(){
     botaoDeAcessibilidade.classList.toggle('rotacao-botao');
-    botaoDeAcessibilidade.classList.toggle('apresenta-lista');
+    opcoesDeAcessibilidade.classList.toggle('apresenta-lista');
   })
 
   const alternaContraste = document.getElementById('alterna-contrastre');
